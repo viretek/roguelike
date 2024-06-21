@@ -9,7 +9,7 @@ public class DamageOnCollision : MonoBehaviour
         Debug.Log("Враг столкнулся с объектом.");
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Enemy>().TakeDamage();
+            other.GetComponent<ALIIIIVE>().TakeDamage();
         }
     }
 }

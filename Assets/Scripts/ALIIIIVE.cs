@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class ALIIIIVE : MonoBehaviour
 {
     public bool isDead = false;
     public void TakeDamage()
