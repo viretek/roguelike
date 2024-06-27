@@ -1,6 +1,7 @@
 using UnityEngine;
+using System.Collections;
 
-public class Enemy : MonoBehaviour
+public class ALIIIIVE : MonoBehaviour
 {
     public bool isDead = false;
     public void TakeDamage()
@@ -15,7 +16,6 @@ public class Enemy : MonoBehaviour
         // Устанавливаем флаг isDead в true
         isDead = true;
 
-        // Отключаем объект врага
-        gameObject.SetActive(false);
+        GetComponent<Animator>().SetBool("isDead", isDead);
     }
 }
