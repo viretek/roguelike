@@ -9,7 +9,7 @@ public class DamageOnCollisionToPlayer : MonoBehaviour
         Debug.Log("БЕГИ ПРОЧЬ ИЗ ДЕРЕВНИ");
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<ALIIIIVE>().TakeDamage();
+            other.GetComponent<PlayeerDeath>().TakeDamage();
             Debug.Log("Ох зря я сюда полез...");
         }
     }

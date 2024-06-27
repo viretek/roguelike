@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class ALIIIIVE : MonoBehaviour
 {
@@ -15,7 +16,6 @@ public class ALIIIIVE : MonoBehaviour
         // Устанавливаем флаг isDead в true
         isDead = true;
 
-        // Отключаем объект врага
-        gameObject.SetActive(false);
+        GetComponent<Animator>().SetBool("isDead", isDead);
     }
 }

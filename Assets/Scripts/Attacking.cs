@@ -11,9 +11,9 @@ public class CrossSpawnerAndTimeSlowdown : MonoBehaviour
         
         if (Input.GetMouseButtonDown(0)) // Проверяем клик левой кнопкой мыши
         {
-            Vector3 spawnPos = Camera.main.ScreenToWorldPoint(Input.mousePosition); // Получаем позицию клика в мировых координатах
-            spawnPos.z = 0f; // Устанавливаем глубину (z) для 2D игр
-            Instantiate(crossPrefab, spawnPos, Quaternion.identity); // Спавним префаб креста
+            Vector3 spawnPos = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
+            spawnPos.z = 0f;
+            Instantiate(crossPrefab, spawnPos, Quaternion.identity); 
             Debug.Log("X coordinate: " + spawnPos.x + ", Y coordinate: " + spawnPos.y);
         }
     }
